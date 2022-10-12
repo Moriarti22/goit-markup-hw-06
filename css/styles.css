@@ -42,7 +42,6 @@ body {
     color: var(--primary-color-text);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    padding-top: 80px;
 }
 
 h1,
@@ -894,7 +893,7 @@ textarea {
     letter-spacing: 0.03em;
 }
 
-.license-check input {
+.license-check input[type='checkbox'] {
     width: 16px;
     height: 15px;
     margin-right: 7px;
