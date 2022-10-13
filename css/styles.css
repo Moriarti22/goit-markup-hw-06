@@ -163,6 +163,7 @@ img {
 
 .link.current::after {
     position: absolute;
+    display: block;
     bottom: -1px;
     left: 0;
     content: '';
