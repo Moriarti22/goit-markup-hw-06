@@ -556,9 +556,15 @@
         <div class="subscription">
           <b class="title">Підпишіться на розсилку</b>
           <div class="send-email">
-            <label for="email"></label>
-            <input type="email" class="email" id="email" placeholder="E-mail" />
-            <button class="submit">Підписатися</button>
+            <label>
+              <input type="email" class="email" placeholder="E-mail" />
+            </label>
+            <button class="btn-send" type="submit">
+              <span class="title-send">Підписатися</span>
+              <svg class="svg-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -577,15 +583,15 @@
           <form>
             <div class="form-field">
               <label for="name">Ім'я</label>
-                <input type="name" name="name" id="name" autocomplete="name" />
-                <svg class="modal-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-people-modal"></use>
-                </svg>
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-people-modal"></use>
+              </svg>
             </div>
 
             <div class="form-field">
               <label for="phone">Телефон</label>
-              <input type="tel" name="phone" id="phone" />
+              <input class="form-input" type="tel" name="phone" id="phone" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-modal"></use>
               </svg>
@@ -593,7 +599,7 @@
 
             <div class="form-field">
               <label for="mail">Пошта</label>
-              <input type="email" name="mail" id="mail" />
+              <input class="form-input" type="email" name="mail" id="mail" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-envelope-modal"></use>
               </svg>
@@ -610,7 +616,12 @@
               ></textarea>
             </div>
             <div class="license-check">
-              <input type="checkbox" name="license" id="license" />
+              <input
+                class="form-input"
+                type="checkbox"
+                name="license"
+                id="license"
+              />
               <label for="license"
                 >Погоджуюся з розсилкою та приймаю
                 <span>
