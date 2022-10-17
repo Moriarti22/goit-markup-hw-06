@@ -909,7 +909,8 @@ footer {
     fill: var(--accent-color);
 } */
 
-.form-field:focus-within .modal-icon {
+.form-field:focus-within .modal-icon,
+.form-field:hover .modal-icon {
     fill: var(--accent-color);
 }
 
